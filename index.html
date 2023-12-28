@@ -1,0 +1,126 @@
+<!-- Начало документа -->
+<!DOCTYPE html><html lang="ru"><head>
+    <!-- Информация в поисковой строке страницы -->
+	<title>Ремонт квартиры под ключ в рассрочку(кредит) без %. От 3 000₽ за кв. м.</title>
+    <!-- Описание для SEO - поисковой оптимизации страницы -->
+	<meta name="description" content="Сделаем вам ремонт квартиры под ключ в рассрочку (кредит) без % и первого взноса. Оформление без банка по паспорту в офисе во Владивостоке.">
+    	<!--Кодировка русского языка  -->
+	<meta charset="UTF-8"> 
+    <!-- Ниже задаём настройки для просмотра страницы с телефона -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> 
+    <!-- Настройка поддержки браузером MS Edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!-- Таблицы стилей (весь дезигн) -->
+    <link rel="stylesheet" href="styles.css">	 
+</head>
+<body>	
+	<div class="image">
+		<img src="rasr.jpg" alt="freeCodeCamp" />
+	</div>
+		<!-- <h1 class="title title--installment">Ремонт квартиры в рассрочку без переплат <span>от 3 000₽ за кв.м.</span></h1> -->
+		<section class="installment">
+			<div class="installment__container container">
+				<h2 class="installment__title title">Рассчитайте стоимость ремонта в рассрочку</h2>			
+				<div class="installment__form">
+					<form action method="post" id="installmentForm">
+						<div class="installment__wrapper">				
+							<div class="installment__column">
+								<div class="installment__group">
+									<label class="installment__label" for="budget">1. Укажите предполагаемый бюджет ремонта</label>
+									<input class="installment__input" type="number" name="budget" id="budget" placeholder="от 30 000 до 500 000" required>
+								</div>
+								<fieldset class="installment__group">
+									<legend class="installment__label">2. Укажите оптимальный срок рассрочки</legend>
+									<ul class="installment__list">
+										<li class="installment__item">								
+											<input class="visually-hidden" type="radio" name="time" value="3" id="3months" checked>
+											<label class="installment__value" for="3months">3 месяца</label>
+										</li>
+										<li class="installment__item">
+											<input class="visually-hidden" type="radio" name="time" value="6" id="6months">
+											<label class="installment__value" for="6months">6 месяцев</label>
+										</li>
+										<li class="installment__item">
+											<input class="visually-hidden" type="radio" name="time" value="12" id="12months">
+											<label class="installment__value" for="12months">12 месяцев</label>
+										</li>
+									</ul>						
+								</fieldset>
+								<fieldset class="installment__group">
+									<legend class="installment__label">3. Выберите условие рассрочки</legend>
+									<ul class="installment__list">
+										<li class="installment__item">								
+											<input class="visually-hidden" type="radio" name="installment-condition" value="without-overpayment" id="withoutOverpayment" checked>
+											<label class="installment__value" for="withoutOverpayment">Без первого взноса</label>
+										</li>
+										<li class="installment__item">
+											<input class="visually-hidden" type="radio" name="installment-condition" value="with-overpayment" id="withOverpayment">
+											<label class="installment__value" for="withOverpayment">С первым взносом</label>
+										</li>																		
+									</ul>
+									<div class="installment__group installment__group--deposit">
+										<label class="installment__label" for="deposit">Первоначальный взнос</label>
+										<input class="installment__input" type="number" name="deposit" id="deposit" placeholder="0" value="0">									
+									</div>									
+								</fieldset>						
+							</div>
+							<div class="installment__column">
+								<div class="installment__block">
+									<p class="installment__sum">Сумма переплаты</p>
+									<p class="installment__total">0 руб.</p>
+								</div>							
+								<div class="installment__block">
+									<p class="installment__sum">Ежемесячный платеж</p>
+									<p class="installment__total"><span id="payment">0</span> руб.</p>
+								</div>
+								<div class="installment__block">
+									<p class="installment__sum">Итоговая сумма выплаты</p>
+									<p class="installment__total"><span id="amount">0</span> руб.</p>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>	
+		</section>
+		<section class="conditions">
+			<h2 class="conditions__title title">Условия предоставления рассрочки</h2>		
+			<div class="image">
+				<img src="remont-kvartiry-1.jpg" alt="freeCodeCamp" />
+			</div>	
+			
+			<ul class="conditions__list">
+				<li class="conditions__item">Максимальная сумма беспроцентной рассрочки - 500 тыс.руб.</li>
+				<li class="conditions__item">* 1-й взнос не обязателен, но с ним повышается вероятность одобрения рассрочки.</li>
+				<li class="conditions__item">Наличие у клиента гражданства РФ.</li>
+				<li class="conditions__item">Наличие постоянной регистрации РФ (не важно в каком регионе).</li>
+				<li class="conditions__item">Трудоустройство во Владивостоке или МО.</li>
+				<li class="conditions__item">Наличие постоянного дохода.</li>
+				<li class="conditions__item">Ежемесячный платеж – не больше 35% от дохода.</li>
+				<li class="conditions__item">Минимальная сумма рассрочки – 70 тыс. руб.</li>
+				<li class="conditions__item">Максимальная сумма – 500 тыс. руб.</li>
+				<li class="conditions__item">Наличие контактного стационарного телефона (не обязательно клиента, можно рабочий и т.д.)</li>
+				<li class="conditions__item">На материалы и спецмонтаж рассрочка не распространяется, только на сумму сметы.</li>
+				<li class="conditions__item">При ремонте в рассрочку акции компании не действуют.</li>
+			</ul>
+			<div class="image">
+				<img src="1024px-Construction_in_Toronto_May_2012.jpg" alt="" />
+			</div>
+			<h3 class="conditions__title title">Где можно оформить рассрочку?</h2>
+				<div class="image">
+					<img src="fonn.jpg" alt="" />
+				</div>
+				
+			<div class="conditions__block">
+				<p class="conditions__info">Рассрочка оформляется в офисе по адресу: <br>г. Владивосток, ул. Ваша, дом 1, кв 1</p>
+				<p class="conditions__info">Для оформления рассрочки нужен только паспорт</p>
+			</div>		
+		</section>
+
+
+    <script charset="UTF-8" async src="init"></script>
+    <!-- Работа калькулятора -->
+    <script src="../jquery.min.js"></script>	
+	<script src="../installment.min.js"></script>
+</body>
+</html>
